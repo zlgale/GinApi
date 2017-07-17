@@ -13,6 +13,8 @@ import (
 
 func main() {
 	log.Println("[Server Starting]...")
+	// ApiDoc
+
 	// 数据库
 	models.Init()
 	// 设置开发模式：1、线上环境gin.ReleaseMode。2、开发环境gin.DebugMode

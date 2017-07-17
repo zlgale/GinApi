@@ -11,15 +11,22 @@ import (
 	"fmt"
 )
 
-// @Title User Login
-// @API_GROUP User
-// @Description 用户登录接口
-// @Success 200 {object} 
-// @Param   name     query   string true  "user name"  "username"
-// @Param   pwd      query   string  true "password"  "password"
-// @Failure 400 no enough input
-// @Failure 500 get  common error
-// @router /user/login [get]
+// @api post /login 用户登录
+//
+// @apiRequest json
+// @apiParam username string 用户名
+// @apiParam password string 密码
+// @apiExample json
+// {
+//     "username": "admin",
+//     "password": "123456"
+// }
+//
+// @apiSuccess 201 成功登录
+// @apiParam expries int 过期的时间，单位秒
+// @apiParam token string 存储 token
+//
+// @apiError 401 账号密码验证错误
 func UserLoginHandler(c *gin.Context) {
 	//user login
 	//name := c.Query("name")

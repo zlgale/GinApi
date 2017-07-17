@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;Gin_API&gt;">
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/../apidoc" />
       <root url="file://$PROJECT_DIR$/../gopkg.in" />
       <root url="file://$PROJECT_DIR$/../goblog" />
       <root url="file://$PROJECT_DIR$/../blog" />
@@ -12,10 +13,10 @@
       <root url="file://$PROJECT_DIR$/../Gin_API_Framework" />
       <root url="file://$PROJECT_DIR$/../golang.org" />
       <root url="file://$PROJECT_DIR$/../github.com" />
-      <root url="file://$PROJECT_DIR$/../apidoc-master" />
       <root url="file://$PROJECT_DIR$/../req-master" />
     </CLASSES>
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/../apidoc" />
       <root url="file://$PROJECT_DIR$/../gopkg.in" />
       <root url="file://$PROJECT_DIR$/../goblog" />
       <root url="file://$PROJECT_DIR$/../blog" />
@@ -27,7 +28,6 @@
       <root url="file://$PROJECT_DIR$/../Gin_API_Framework" />
       <root url="file://$PROJECT_DIR$/../golang.org" />
       <root url="file://$PROJECT_DIR$/../github.com" />
-      <root url="file://$PROJECT_DIR$/../apidoc-master" />
       <root url="file://$PROJECT_DIR$/../req-master" />
     </SOURCES>
     <excluded>
