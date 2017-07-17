@@ -11,56 +11,59 @@ import (
 	"fmt"
 )
 
-// @api post /login 用户登录
-//
-// @apiRequest json
-// @apiParam username string 用户名
-// @apiParam password string 密码
-// @apiExample json
-// {
-//     "username": "admin",
-//     "password": "123456"
-// }
-//
-// @apiSuccess 201 成功登录
-// @apiParam expries int 过期的时间，单位秒
-// @apiParam token string 存储 token
-//
-// @apiError 401 账号密码验证错误
+/**
+ * @api get /users 获取所有的用户信息
+ * @apiGroup users
+ * @apiQuery page int 显示第几页的内容
+ * @apiQuery size int 每页显示的数量
+ *
+ * @apiSuccess 200 ok
+ * @apiParam count int 符合条件的所有用户数量
+ * @apiParam users array 用户列表。
+ * @apiExample json
+ * {
+ *     "count": 500,
+ *     "users": [
+ *         {"id":1, "username": "admin1", "name": "管理员2"},
+ *         {"id":2, "username": "admin2", "name": "管理员2"}
+ *     ],
+ * }
+ * @apiExample xml
+ * <users count="500">
+ *     <user id="1" username="admin1" name="管理员1" />
+ *     <user id="2" username="admin2" name="管理员2" />
+ * </users>
+ */
 func UserLoginHandler(c *gin.Context) {
-	//user login
-	//name := c.Query("name")
-	//pwd := c.Query("pwd")
-	//
-	//u, _:= user.UserQueryByName(name)
-	//
-	//valid := u.CheckPassword(pwd)
-	//
-	//if valid{
-	//        sessions.AuthLogin(c, strconv.Itoa(u.Id))
-	//        c.JSON(http.StatusOK, gin.H{
-	//            "status":  "success",
-	//        })
-	//    }else{
-	//        c.JSON(http.StatusUnauthorized, gin.H{
-	//            "status":  "failed",
-	//            "message": "login failed",
-	//        })
-	//    }
 	c.JSON(http.StatusUnauthorized, gin.H{
 		"status":  "failed",
 		"message": "login failed",
 	})
 }
 
-// @Title User Logout
-// @API_GROUP User
-// @Description 用户登出接口
-// @Success 200 {object} 
-// @Param   name     query   string false       "user name"
-// @Failure 400 no enough input
-// @Failure 500 get  common error
-// @router /user/logout [get]
+/**
+ * @api get /users 获取所有的用户信息
+ * @apiGroup users
+ * @apiQuery page int 显示第几页的内容
+ * @apiQuery size int 每页显示的数量
+ *
+ * @apiSuccess 200 ok
+ * @apiParam count int 符合条件的所有用户数量
+ * @apiParam users array 用户列表。
+ * @apiExample json
+ * {
+ *     "count": 500,
+ *     "users": [
+ *         {"id":1, "username": "admin1", "name": "管理员2"},
+ *         {"id":2, "username": "admin2", "name": "管理员2"}
+ *     ],
+ * }
+ * @apiExample xml
+ * <users count="500">
+ *     <user id="1" username="admin1" name="管理员1" />
+ *     <user id="2" username="admin2" name="管理员2" />
+ * </users>
+ */
 func UserLogoutHandler(c *gin.Context) {
 	name := c.Query("name")
 	message := name + " is logout"
@@ -71,16 +74,29 @@ func UserLogoutHandler(c *gin.Context) {
 	})
 }
 
-//@Title User Create
-//@API_GROUP User
-//@Description 创建用户接口
-//@Success 200 {object}
-//@Param   name     query   string false       "user name"
-//@Param   phone     query   string false       "user name"
-//@Param   pwd     query   string false       "user name"
-//@Failure 400 no enough input
-//@Failure 500 get  common error
-//@router /user/create [get]
+/**
+ * @api get /users 获取所有的用户信息
+ * @apiGroup users
+ * @apiQuery page int 显示第几页的内容
+ * @apiQuery size int 每页显示的数量
+ *
+ * @apiSuccess 200 ok
+ * @apiParam count int 符合条件的所有用户数量
+ * @apiParam users array 用户列表。
+ * @apiExample json
+ * {
+ *     "count": 500,
+ *     "users": [
+ *         {"id":1, "username": "admin1", "name": "管理员2"},
+ *         {"id":2, "username": "admin2", "name": "管理员2"}
+ *     ],
+ * }
+ * @apiExample xml
+ * <users count="500">
+ *     <user id="1" username="admin1" name="管理员1" />
+ *     <user id="2" username="admin2" name="管理员2" />
+ * </users>
+ */
 func CreateUserHandler(c *gin.Context) {
 
 	//uid := c.Query("name")
@@ -95,20 +111,29 @@ func CreateUserHandler(c *gin.Context) {
 	})
 }
 
-//"userinfo":{
-//	"uid":uid,
-//	"username":username,
-//	"departname":departname,
-//	"created":created,
-//},
-// @Title User Query By ID
-// @API_GROUP User
-// @Description 查询用户接口通过用户ID
-// @Success 200 {object} 
-// @Param   uid     query   string false       "user id"
-// @Failure 400 no enough input
-// @Failure 500 get  common error
-// @router /user/query [get]
+/**
+ * @api get /users 获取所有的用户信息
+ * @apiGroup users
+ * @apiQuery page int 显示第几页的内容
+ * @apiQuery size int 每页显示的数量
+ *
+ * @apiSuccess 200 ok
+ * @apiParam count int 符合条件的所有用户数量
+ * @apiParam users array 用户列表。
+ * @apiExample json
+ * {
+ *     "count": 500,
+ *     "users": [
+ *         {"id":1, "username": "admin1", "name": "管理员2"},
+ *         {"id":2, "username": "admin2", "name": "管理员2"}
+ *     ],
+ * }
+ * @apiExample xml
+ * <users count="500">
+ *     <user id="1" username="admin1" name="管理员1" />
+ *     <user id="2" username="admin2" name="管理员2" />
+ * </users>
+ */
 //func UserQueryByIdHandler(c *gin.Context) {
 //
 //    suid := c.Query("uid")
@@ -130,10 +155,29 @@ func CreateUserHandler(c *gin.Context) {
 //    })
 //
 //}
-
-//@Title User List
-//@API_GROUP User
-//@Description 查询用户列表接口
+/**
+ * @api get /users 获取所有的用户信息
+ * @apiGroup users
+ * @apiQuery page int 显示第几页的内容
+ * @apiQuery size int 每页显示的数量
+ *
+ * @apiSuccess 200 ok
+ * @apiParam count int 符合条件的所有用户数量
+ * @apiParam users array 用户列表。
+ * @apiExample json
+ * {
+ *     "count": 500,
+ *     "users": [
+ *         {"id":1, "username": "admin1", "name": "管理员2"},
+ *         {"id":2, "username": "admin2", "name": "管理员2"}
+ *     ],
+ * }
+ * @apiExample xml
+ * <users count="500">
+ *     <user id="1" username="admin1" name="管理员1" />
+ *     <user id="2" username="admin2" name="管理员2" />
+ * </users>
+ */
 func UserListHandler(c *gin.Context) {
 	users := user.UserListQuery()
 
@@ -143,9 +187,29 @@ func UserListHandler(c *gin.Context) {
 	})
 }
 
-// @Title User List
-// @API_GROUP User
-// @Description 查询个人信息接口
+/**
+ * @api get /users 获取所有的用户信息
+ * @apiGroup users
+ * @apiQuery page int 显示第几页的内容
+ * @apiQuery size int 每页显示的数量
+ *
+ * @apiSuccess 200 ok
+ * @apiParam count int 符合条件的所有用户数量
+ * @apiParam users array 用户列表。
+ * @apiExample json
+ * {
+ *     "count": 500,
+ *     "users": [
+ *         {"id":1, "username": "admin1", "name": "管理员2"},
+ *         {"id":2, "username": "admin2", "name": "管理员2"}
+ *     ],
+ * }
+ * @apiExample xml
+ * <users count="500">
+ *     <user id="1" username="admin1" name="管理员1" />
+ *     <user id="2" username="admin2" name="管理员2" />
+ * </users>
+ */
 func UserByNameHandler(c *gin.Context) {
 	// 获取传入的参数
 
