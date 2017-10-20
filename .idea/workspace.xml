@@ -2,13 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dcb327c-729b-44f7-948b-560918218b99" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/.apidoc.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/doc.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/initdoc.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/style.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/Gin_API.iml" afterPath="$PROJECT_DIR$/.idea/Gin_API.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__Gin_API_.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Go_SDK.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/conf/app.conf" afterPath="$PROJECT_DIR$/api/conf/app.conf" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.go" afterPath="$PROJECT_DIR$/api/controllers/user.go" />
+      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/api/main.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/README.md" afterPath="$PROJECT_DIR$/api/middleware/contrib/README.md" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/cache.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/cache.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/cache_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/cache_test.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/example/example.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/example/example.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/inmemory.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/inmemory.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/inmemory_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/inmemory_test.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/memcached.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/memcached.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/memcached_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/memcached_test.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/redis.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/redis.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/redis_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/redis_test.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/serializer.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/serializer.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/commonlog/commonlog.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/commonlog/commonlog.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-csrf/.gitignore" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-csrf/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-csrf/.travis.yml" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-csrf/.travis.yml" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-csrf/README.md" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-csrf/README.md" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-csrf/csrf.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-csrf/csrf.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-csrf/csrf_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-csrf/csrf_test.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-nice-recovery/.gitignore" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-nice-recovery/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-nice-recovery/LICENSE" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-nice-recovery/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-nice-recovery/README.md" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-nice-recovery/README.md" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-nice-recovery/recovery.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-nice-recovery/recovery.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/ginrus/example/example.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/ginrus/example/example.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/ginrus/ginrus.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/ginrus/ginrus.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gzip/example/example.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gzip/example/example.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gzip/gzip.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gzip/gzip.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/gzip/gzip_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gzip/gzip_test.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/rest/rest.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/rest/rest.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/secure/example/example.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/secure/example/example.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/secure/secure.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/secure/secure.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/secure/secure_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/secure/secure_test.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/secure_cookie/secure_cookie.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/secure_cookie/secure_cookie.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/README.md" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/README.md" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/cookie.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/cookie.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/cookie_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/cookie_test.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/examples/example_cookie.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/examples/example_cookie.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/examples/example_redis.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/examples/example_redis.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/login_required.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/login_required.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/redis.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/redis.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/redis_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/redis_test.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/sessions.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/sessions.go" />
+      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/sessions_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/sessions_test.go" />
+      <change beforePath="$PROJECT_DIR$/models/initdb.go" afterPath="$PROJECT_DIR$/api/db/init_mysql.go" />
+      <change beforePath="$PROJECT_DIR$/models/user/user.go" afterPath="$PROJECT_DIR$/api/models/user/user.go" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" afterPath="$PROJECT_DIR$/api/routers/router.go" />
+      <change beforePath="$PROJECT_DIR$/sql.log" afterPath="$PROJECT_DIR$/api/sql.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,34 +62,49 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".apidoc.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.apidoc.json">
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+              <folding>
+                <element signature="e#14#160#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="user.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/user.go">
+        <entry file="file://$PROJECT_DIR$/api/controllers/user.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="396">
+              <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
+              <folding>
+                <element signature="e#21#172#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.conf" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/conf/app.conf">
+      <file leaf-file-name="context.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../github.com/gin-gonic/gin/context.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="557">
+              <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+              <folding>
+                <element signature="e#181#403#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/routers/router.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -69,6 +129,8 @@
       <find>QueryRow</find>
       <find>DefaultWriter</find>
       <find>locale.GetLocale()</find>
+      <find>authorized</find>
+      <find>github.com/json-iterator/go</find>
     </findStrings>
     <replaceStrings>
       <replace>engine</replace>
@@ -79,8 +141,16 @@
       <dir>D:\GoWorkSpace\src\Gin_API_Framework\api\middleware</dir>
     </dirStrings>
   </component>
+  <component name="GOROOT" path="C:/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$" />
+      </list>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -96,18 +166,24 @@
         <option value="$PROJECT_DIR$/middleware/contrib/sessions/examples/example_redis.go" />
         <option value="$PROJECT_DIR$/middleware/contrib/sessions/login_required.go" />
         <option value="$PROJECT_DIR$/models/user/account.go" />
-        <option value="$PROJECT_DIR$/models/initdb.go" />
-        <option value="$PROJECT_DIR$/models/user/user.go" />
-        <option value="$PROJECT_DIR$/routers/router.go" />
         <option value="$PROJECT_DIR$/docs/docs.go" />
         <option value="$PROJECT_DIR$/docs/.apidoc.json" />
         <option value="$PROJECT_DIR$/controllers/doc.go" />
-        <option value="$PROJECT_DIR$/controllers/user.go" />
         <option value="$PROJECT_DIR$/docs/doc.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/docs/initdoc.go" />
         <option value="$PROJECT_DIR$/.apidoc.json" />
         <option value="$PROJECT_DIR$/apidoc/app/app.go" />
+        <option value="$PROJECT_DIR$/models/initdb.go" />
+        <option value="$PROJECT_DIR$/models/user/user.go" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/routers/router.go" />
+        <option value="$PROJECT_DIR$/controllers/user.go" />
+        <option value="$PROJECT_DIR$/api/routers/router.go" />
+        <option value="$PROJECT_DIR$/api/db/initdb.go" />
+        <option value="$PROJECT_DIR$/api/db/init_mysql.go" />
+        <option value="$PROJECT_DIR$/api/models/user/user.go" />
+        <option value="$PROJECT_DIR$/api/main.go" />
+        <option value="$PROJECT_DIR$/api/controllers/user.go" />
       </list>
     </option>
   </component>
@@ -117,11 +193,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="800" />
+    <option name="y" value="138" />
+    <option name="width" value="1918" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -162,48 +238,69 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GinAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GinAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GinAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GinAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="GinApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GinApi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GinApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GinApi" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GinApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GinApi" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GinApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="GinApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;Gin_API&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="GinApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;Gin_API&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GinApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;Gin_API&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../github.com/caixw/apidoc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="GO_FMT" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GoProject\src\GinApi\api" />
+      <recent name="E:\GoProject\src\GinApi" />
+      <recent name="E:\GoProject\src\GinApi\api\db" />
       <recent name="D:\GoWorkSpace\src\GinAPI\docs" />
       <recent name="D:\GoWorkSpace\src\GinAPI\models" />
-      <recent name="D:\GoWorkSpace\src\GinAPI" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GoWorkSpace\src\GinAPI" />
@@ -230,15 +327,8 @@
       <module name="Gin_API" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <filePath value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
-      <module name="Gin_API" />
-      <working_directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <method />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="Gin_API" />
@@ -246,6 +336,19 @@
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="Gin_API" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
@@ -264,15 +367,6 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -285,18 +379,17 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22168803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2260128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2217438" sideWeight="0.506424" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Basis.js" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29479167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31209505" sideWeight="0.49357602" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29130435" sideWeight="0.49357602" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -304,6 +397,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Basis.js" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -328,7 +422,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -339,27 +433,83 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/models/user/user.go</url>
-          <line>43</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/style.css">
+    <entry file="file://$PROJECT_DIR$/../github.com/caixw/apidoc/output/static/group.html" />
+    <entry file="file://$PROJECT_DIR$/../github.com/caixw/apidoc/output/static/index.html" />
+    <entry file="file://$PROJECT_DIR$/../github.com/caixw/apidoc/output/static/app.js" />
+    <entry file="file://$PROJECT_DIR$/apidoc/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/apidoc/.travis.yml" />
+    <entry file="file://$PROJECT_DIR$/apidoc/LICENSE" />
+    <entry file="file://$PROJECT_DIR$/apidoc/CONTRIBUTING.md" />
+    <entry file="file://$PROJECT_DIR$/apidoc/README.md" />
+    <entry file="file://$PROJECT_DIR$/apidoc/types.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/.idea/apidoc.iml" />
+    <entry file="file://$PROJECT_DIR$/apidoc/.idea/modules.xml" />
+    <entry file="file://$PROJECT_DIR$/apidoc/.idea/vcs.xml" />
+    <entry file="file://$PROJECT_DIR$/apidoc/.idea/workspace.xml" />
+    <entry file="file://$PROJECT_DIR$/apidoc/locale/locale.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/locale/locale_posix.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/locale/locale_test.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/locale/locale_windows.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/locale/message.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/locale/message_en.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/locale/message_zh-Hans.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/locale/message_zh-Hant.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/app/app.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/app/app_test.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/app/errors.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/app/errors_test.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/doc/api.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/doc/api_test.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/doc/bench_test.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/doc/lexer.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/doc/doc.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/doc/lexer_test.go" />
+    <entry file="file://$PROJECT_DIR$/apidoc/docs/example/doc/app.js" />
+    <entry file="file://$PROJECT_DIR$/apidoc/docs/example/doc/index.html" />
+    <entry file="file://$PROJECT_DIR$/apidoc/docs/example/doc/jquery-3.0.0.min.js" />
+    <entry file="file://$PROJECT_DIR$/apidoc/docs/example/doc/style.css" />
+    <entry file="file://$PROJECT_DIR$/.apidoc.json" />
+    <entry file="file://$PROJECT_DIR$/api/middleware/contrib/ginrus/ginrus.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/app.js">
+    <entry file="file://$PROJECT_DIR$/api/middleware/contrib/gin-nice-recovery/recovery.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/middleware/contrib/commonlog/commonlog.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/middleware/contrib/sessions/cookie_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/middleware/contrib/sessions/cookie.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/middleware/contrib/cache/cache.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -367,395 +517,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
+    <entry file="file://$PROJECT_DIR$/../github.com/gin-gonic/gin/examples/basic/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="195" column="67" lean-forward="true" selection-start-line="195" selection-start-column="67" selection-end-line="195" selection-end-column="67" />
+        <state relative-caret-position="62">
+          <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/api/conf/app.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4259">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="116" lean-forward="true" selection-start-line="7" selection-start-column="116" selection-end-line="7" selection-end-column="116" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/caixw/apidoc/locale/locale.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-467">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/caixw/apidoc/docs/example/src/doc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/caixw/apidoc/docs/example/src/api.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/.apidoc.json">
+    <entry file="file://$PROJECT_DIR$/api/db/init_mysql.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="49" />
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#12#87#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/user/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1044">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sql.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/apidoc/bin/apidoc">
+    <entry file="file://$PROJECT_DIR$/api/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding>
+            <element signature="e#14#160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/initdoc.go">
+    <entry file="file://$PROJECT_DIR$/api/controllers/user.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="396">
+          <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
+          <folding>
+            <element signature="e#21#172#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/caixw/apidoc/output/static/static.go">
+    <entry file="file://$PROJECT_DIR$/../github.com/gin-gonic/gin/context.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/caixw/apidoc/output/static/group.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/caixw/apidoc/output/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/caixw/apidoc/output/static/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-957">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/CONTRIBUTING.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/types.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/.idea/apidoc.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/locale/locale.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/locale/locale_posix.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/locale/locale_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/locale/locale_windows.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/locale/message.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1262">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/locale/message_en.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/locale/message_zh-Hans.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/locale/message_zh-Hant.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/app/app.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/app/app_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/app/errors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/app/errors_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/doc/api.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/doc/api_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/doc/bench_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/doc/lexer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/doc/doc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/doc/lexer_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/docs/example/doc/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/docs/example/doc/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2635">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/docs/example/doc/jquery-3.0.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc/docs/example/doc/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.apidoc.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/app.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="557">
+          <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+          <folding>
+            <element signature="e#181#403#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
