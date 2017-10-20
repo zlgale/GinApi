@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dcb327c-729b-44f7-948b-560918218b99" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Gin_API.iml" afterPath="$PROJECT_DIR$/.idea/Gin_API.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__Gin_API_.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Go_SDK.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/conf/app.conf" afterPath="$PROJECT_DIR$/api/conf/app.conf" />
-      <change beforePath="$PROJECT_DIR$/controllers/user.go" afterPath="$PROJECT_DIR$/api/controllers/user.go" />
-      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/api/main.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/README.md" afterPath="$PROJECT_DIR$/api/middleware/contrib/README.md" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/cache.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/cache.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/cache_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/cache_test.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/example/example.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/example/example.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/inmemory.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/inmemory.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/inmemory_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/inmemory_test.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/memcached.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/memcached.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/memcached_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/memcached_test.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/redis.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/redis.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/redis_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/redis_test.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/cache/serializer.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/cache/serializer.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/commonlog/commonlog.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/commonlog/commonlog.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-csrf/.gitignore" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-csrf/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-csrf/.travis.yml" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-csrf/.travis.yml" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-csrf/README.md" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-csrf/README.md" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-csrf/csrf.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-csrf/csrf.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-csrf/csrf_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-csrf/csrf_test.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-nice-recovery/.gitignore" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-nice-recovery/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-nice-recovery/LICENSE" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-nice-recovery/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-nice-recovery/README.md" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-nice-recovery/README.md" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gin-nice-recovery/recovery.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gin-nice-recovery/recovery.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/ginrus/example/example.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/ginrus/example/example.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/ginrus/ginrus.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/ginrus/ginrus.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gzip/example/example.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gzip/example/example.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gzip/gzip.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gzip/gzip.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/gzip/gzip_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/gzip/gzip_test.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/rest/rest.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/rest/rest.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/secure/example/example.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/secure/example/example.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/secure/secure.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/secure/secure.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/secure/secure_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/secure/secure_test.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/secure_cookie/secure_cookie.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/secure_cookie/secure_cookie.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/README.md" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/README.md" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/cookie.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/cookie.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/cookie_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/cookie_test.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/examples/example_cookie.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/examples/example_cookie.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/examples/example_redis.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/examples/example_redis.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/login_required.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/login_required.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/redis.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/redis.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/redis_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/redis_test.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/sessions.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/sessions.go" />
-      <change beforePath="$PROJECT_DIR$/middleware/contrib/sessions/sessions_test.go" afterPath="$PROJECT_DIR$/api/middleware/contrib/sessions/sessions_test.go" />
-      <change beforePath="$PROJECT_DIR$/models/initdb.go" afterPath="$PROJECT_DIR$/api/db/init_mysql.go" />
-      <change beforePath="$PROJECT_DIR$/models/user/user.go" afterPath="$PROJECT_DIR$/api/models/user/user.go" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" afterPath="$PROJECT_DIR$/api/routers/router.go" />
-      <change beforePath="$PROJECT_DIR$/sql.log" afterPath="$PROJECT_DIR$/api/sql.log" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -253,12 +202,6 @@
             </path>
             <path>
               <item name="GinApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GinApi" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GinApi" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -271,13 +214,6 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="GOPATH &lt;Gin_API&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GinApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;Gin_API&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
