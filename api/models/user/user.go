@@ -6,44 +6,26 @@ import (
 )
 
 type User struct {
-	Uid        string `form:"uid" json:"uid"`
-	Username   string `form:"username json:"username" binding:"required`
-	Departname string `form:"departname json:"departname"`
-	Created    string `form:"created json:"created"`
+	user_id       string `form:"user_id" json:"user_id"`
+	user_realname string `form:"user_realname" json:"user_realname"`
+	user_nickname string `form:"user_nickname" json:"user_nickname"`
+	user_password string `form:"user_password" json:"user_password"`
+	user_age      int    `form:"user_age" json:"user_age"`
+	user_sex      int    `form:"user_sex" json:"user_sex"`
+	user_adress   string `form:"user_adress" json:"user_adress"`
+	user_phone    string `form:"user_phone" json:"user_phone"`
+	user_qq       int    `form:"user_qq" json:"user_qq"`
+	user_wechat   string `form:"user_wechat" json:"user_wechat"`
 }
 
-//check user password
-//func (user *User) CheckPassword(rawPassword string) bool {
-//	password := genPassword(
-//		rawPassword, user.Salt)
-//
-//	return password == user.Password
-//}
-//
-//func UserQueryById(uid int) (user User) {
-//
-//	o := orm.NewOrm()
-//	u := User{Id: uid}
-//
-//	err := o.Read(&u)
-//
-//	if err == orm.ErrNoRows {
-//		fmt.Println("查询不到")
-//	} else if err == orm.ErrMissPK {
-//		fmt.Println("找不到主键")
-//	} else {
-//		fmt.Println(u.Id, u.Name)
-//	}
-//
-//	return u
-//}
-// 插入数据
-func UserInsert(uid, username, departname, created string) bool {
+
+// 用户注册
+func UserInsert(user_nickname, user_password, user_age, user_sex, user_phone string) bool {
 	//db, err := sql.Open("mysql", "root:@/test?charset=utf8")
 	//checkErr(err)
-	stmt, err := db.DB.Prepare(`INSERT into userinfo (uid,username,departname,created) values (?,?,?,?)`)
+	stmt, err := db.DB.Prepare(`INSERT into user_info (user_nickname,user_password,user_age,user_sex,user_phone) values (?,?,?,?,?)`)
 	checkErr(err)
-	res, err := stmt.Exec(uid, username, departname, created)
+	res, err := stmt.Exec(user_nickname, user_password, user_age, user_sex, user_phone)
 	checkErr(err)
 	id, err := res.LastInsertId()
 	checkErr(err)
@@ -51,57 +33,54 @@ func UserInsert(uid, username, departname, created string) bool {
 	return true
 }
 
-// 根据姓名查询
-func UserQueryByUserName(name string) User {
-	//rows, err := (models.DB).Query(`SELECT * FROM userinfo where username = ?`,"大风")
-	rows := (db.DB).QueryRow(`SELECT * FROM userinfo where username = ?`, name)
+// 根据昵称查询
+func UserQueryByNickName(nickname string) User {
+	rows := (db.DB).QueryRow(`SELECT * FROM user_info where user_nickname = ?`, nickname)
 	////普通demo
 	var u User
-	var uid, username, departname, created string
-	err := rows.Scan(&uid, &username, &departname, &created)
+	var user_id, user_nickname string
+	var user_age, user_sex int
+	err := rows.Scan(&user_id, &user_nickname, &user_age, &user_sex)
 	checkErr(err)
 	u = User{
-		Uid:        uid,
-		Username:   username,
-		Departname: departname,
-		Created:    created,
+		user_id:        user_id,
+		user_nickname:   user_nickname,
+		user_age: user_age,
+		user_sex:    user_sex,
 	}
 	return u
 }
 
 // 查询所有用户
 func UserListQuery() (users []User) {
-	rows, err := (db.DB).Query(`SELECT * FROM userinfo`)
+	rows, err := (db.DB).Query(`SELECT * FROM user_info`)
 	checkErr(err)
-	////普通demo
 	var u User
 	var arr []User
 	for rows.Next() {
-		var uid string
-		var username string
-		var departname string
-		var created string
+		var user_id string
+		var user_nickname string
+		var user_age int
+		var user_sex int
 
 		rows.Columns()
-		err = rows.Scan(&uid, &username, &departname, &created)
+		err = rows.Scan(&user_id, &user_nickname, &user_age, &user_sex)
 		checkErr(err)
 		u = User{
-			Uid:        uid,
-			Username:   username,
-			Departname: departname,
-			Created:    created,
+			user_id:        user_id,
+			user_nickname:   user_nickname,
+			user_age: user_age,
+			user_sex:    user_sex,
 		}
 		arr = append(arr, u)
 	}
 	return arr
 }
 
-// 更新数据
-func UserUpdate() {
-	//db, err := sql.Open("mysql", "root:@/test?charset=utf8")
-	//checkErr(err)
-
-	stmt, err := db.DB.Prepare(`UPDATE user SET user_age=?,user_sex=? WHERE user_id=?`)
+// 昵称修改
+func UpdateUserNickName() {
+	//stmt, err := db.DB.Prepare(`UPDATE user_info SET user_nickname=?,user_sex=? WHERE user_id=?`)
+	stmt, err := db.DB.Prepare(`UPDATE user_info SET user_nickname=?`)
 	checkErr(err)
 	res, err := stmt.Exec(21, 2, 1)
 	checkErr(err)
@@ -112,10 +91,7 @@ func UserUpdate() {
 
 // 删除数据
 func UserRemove() {
-	//db, err := sql.Open("mysql", "root:@/test?charset=utf8")
-	//checkErr(err)
-
-	stmt, err := db.DB.Prepare(`DELETE FROM user WHERE user_id=?`)
+	stmt, err := db.DB.Prepare(`DELETE FROM user_info WHERE user_phone=?`)
 	checkErr(err)
 	res, err := stmt.Exec(1)
 	checkErr(err)

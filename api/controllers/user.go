@@ -31,8 +31,8 @@ func CreateUserHandler(c *gin.Context) {
 	//username := c.Query("phone")
 	//departname := c.Query("pwd")
 	//created := c.Query("gender")
-	uid, username, departname, created := "001", "大风", "系统开发部", "2017-07-05 11:50:38"
-	success := user.UserInsert(uid, username, departname, created)
+	user_nickname, user_password, user_age, user_sex, user_phone := "大风", "123456", "18", "1","15555555555"
+	success := user.UserInsert(user_nickname, user_password, user_age, user_sex, user_phone)
 	c.JSON(http.StatusOK, gin.H{
 		"status":     http.StatusOK,
 		"is_created": success,
@@ -66,16 +66,16 @@ func UserByNameHandler(c *gin.Context) {
 
 	var u user.User
 	if len(name1) > 0 {
-		u = user.UserQueryByUserName(name1)
+		u = user.UserQueryByNickName(name1)
 	}
 	if len(name2) > 0 {
-		u = user.UserQueryByUserName(name2)
+		u = user.UserQueryByNickName(name2)
 	}
 	if len(name3) > 0 {
-		u = user.UserQueryByUserName(name3)
+		u = user.UserQueryByNickName(name3)
 	}
 	if len(name4) > 0 {
-		u = user.UserQueryByUserName(name4)
+		u = user.UserQueryByNickName(name4)
 	}
 
 	c.JSON(http.StatusOK, gin.H{
@@ -91,7 +91,7 @@ func BindJSONHandler(c *gin.Context) {
 	fmt.Println("name0:", name0)
 	name := c.PostForm("name")
 	if len(name) > 0 {
-		u := user.UserQueryByUserName(name)
+		u := user.UserQueryByNickName(name)
 		c.JSON(http.StatusOK, gin.H{
 			"status": http.StatusOK,
 			"user":   u,
@@ -128,7 +128,7 @@ func BindFormHandler(c *gin.Context) {
 	name := c.PostForm("name")
 	fmt.Println("name1:", name)
 	if len(name) > 0 {
-		u := user.UserQueryByUserName(name)
+		u := user.UserQueryByNickName(name)
 		c.JSON(http.StatusOK, gin.H{
 			"status": http.StatusOK,
 			"user":   u,
