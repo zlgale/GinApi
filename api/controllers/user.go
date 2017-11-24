@@ -33,9 +33,14 @@ func CreateUserHandler(c *gin.Context) {
 	//created := c.Query("gender")
 	user_nickname, user_password, user_age, user_sex, user_phone := "大风", "123456", "18", "1","15555555555"
 	success := user.UserInsert(user_nickname, user_password, user_age, user_sex, user_phone)
+	u := user.UserQueryByNickName(user_nickname)
+
 	c.JSON(http.StatusOK, gin.H{
-		"status":     http.StatusOK,
-		"is_created": success,
+		"code":     http.StatusOK,
+		"msg": success,
+		"info": gin.H{
+			"user_info":u,
+		},
 	})
 }
 

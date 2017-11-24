@@ -2,7 +2,7 @@ use go_schema;
 /*用户信息表*/
 create table if not exists `user_info`(
   `user_id` int unsigned auto_increment primary key,
-  `user_realname` varchar(50) not null,
+  `user_realname` varchar(50),
   `user_nickname` varchar(50) not null,
   `user_password` varchar(50) default '123456',
   `user_age` int not null default 25,
@@ -12,4 +12,5 @@ create table if not exists `user_info`(
   `user_qq` int,
   `user_wechat` varchar(25)
 )
+
 /**/
