@@ -9,7 +9,10 @@ import (
 	_ "runtime"
 	"GinApi/api/models/user"
 	"fmt"
+	"strconv"
+	//"github.com/gin-gonic/gin/json"
 )
+
 func UserLoginHandler(c *gin.Context) {
 	c.JSON(http.StatusUnauthorized, gin.H{
 		"status":  "failed",
@@ -31,26 +34,45 @@ func CreateUserHandler(c *gin.Context) {
 	//username := c.Query("phone")
 	//departname := c.Query("pwd")
 	//created := c.Query("gender")
-	user_nickname, user_password, user_age, user_sex, user_phone := "大风", "123456", "18", "1","15555555555"
-	success := user.UserInsert(user_nickname, user_password, user_age, user_sex, user_phone)
-	u := user.UserQueryByNickName(user_nickname)
+	user_nickname, user_password, user_age, user_sex, user_phone := "大风", "123456", "18", "1", "15555555555"
 
+	var userInfo user.User
+	userId := user.UserInsert(user_nickname, user_password, user_age, user_sex, user_phone)
+	userInfo = user.UserQueryByNickId(int(userId))
+	fmt.Println("CreateUserHandler", userInfo)
+	//userJson, err := json.Marshal(&userInfo)
+	//checkErr(err)
+	//c.JSON(http.StatusOK, gin.H{
+	//	"code": http.StatusOK,
+	//	"msg":  "注册成功",
+	//	"info": gin.H{
+	//		"user_info":userInfo,
+	//	},
+	//})
 	c.JSON(http.StatusOK, gin.H{
-		"code":     http.StatusOK,
-		"msg": success,
+		"code": http.StatusOK,
+		"msg":  "注册成功",
 		"info": gin.H{
-			"user_info":u,
+			"user_id":        "",
+			"user_realname":  "",
+			"user_nickname":  "",
+			"user_age":       "",
+			"user_sex":       "",
+			"user_adress":    "",
+			"user_phone":     "",
+			"user_qq":        "",
+			"user_wechat":    "",
 		},
 	})
 }
 
 func UserListHandler(c *gin.Context) {
-	users := user.UserListQuery()
+	//users := user.UserListQuery()
 
-	c.JSON(http.StatusOK, gin.H{
-		"status": http.StatusOK,
-		"users":  users,
-	})
+	//c.JSON(http.StatusOK, gin.H{
+	//	"status": http.StatusOK,
+	//	"users":  users,
+	//})
 }
 func UserByNameHandler(c *gin.Context) {
 	// 获取传入的参数
@@ -67,20 +89,29 @@ func UserByNameHandler(c *gin.Context) {
 	name3 := c.Param("name")
 	fmt.Println("name3:", name3)
 	name4 := c.Params.ByName("name")
+	// String转Int
 	fmt.Println("name4:", name4)
 
 	var u user.User
-	if len(name1) > 0 {
-		u = user.UserQueryByNickName(name1)
+	if len(name0) > 0 {
+		name00, err := strconv.Atoi(name0)
+		checkErr(err)
+		u = user.UserQueryByNickId(name00)
 	}
 	if len(name2) > 0 {
-		u = user.UserQueryByNickName(name2)
+		name22, err := strconv.Atoi(name0)
+		checkErr(err)
+		u = user.UserQueryByNickId(name22)
 	}
 	if len(name3) > 0 {
-		u = user.UserQueryByNickName(name3)
+		name33, err := strconv.Atoi(name0)
+		checkErr(err)
+		u = user.UserQueryByNickId(name33)
 	}
 	if len(name4) > 0 {
-		u = user.UserQueryByNickName(name4)
+		name44, err := strconv.Atoi(name0)
+		checkErr(err)
+		u = user.UserQueryByNickId(name44)
 	}
 
 	c.JSON(http.StatusOK, gin.H{
@@ -96,7 +127,9 @@ func BindJSONHandler(c *gin.Context) {
 	fmt.Println("name0:", name0)
 	name := c.PostForm("name")
 	if len(name) > 0 {
-		u := user.UserQueryByNickName(name)
+		name00, err := strconv.Atoi(name0)
+		checkErr(err)
+		u := user.UserQueryByNickId(name00)
 		c.JSON(http.StatusOK, gin.H{
 			"status": http.StatusOK,
 			"user":   u,
@@ -133,7 +166,9 @@ func BindFormHandler(c *gin.Context) {
 	name := c.PostForm("name")
 	fmt.Println("name1:", name)
 	if len(name) > 0 {
-		u := user.UserQueryByNickName(name)
+		name00, err := strconv.Atoi(name0)
+		checkErr(err)
+		u := user.UserQueryByNickId(name00)
 		c.JSON(http.StatusOK, gin.H{
 			"status": http.StatusOK,
 			"user":   u,
@@ -161,4 +196,9 @@ func BindFormHandler(c *gin.Context) {
 	//} else {
 	//	c.JSON(404, gin.H{"FORM=== status": "binding FORM error!"})
 	//}
+}
+func checkErr(err error) {
+	if err != nil {
+		panic(err)
+	}
 }

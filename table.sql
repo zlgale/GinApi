@@ -11,6 +11,6 @@ create table if not exists `user_info`(
   `user_phone` varchar(50),
   `user_qq` int,
   `user_wechat` varchar(25)
-)
-
+);
+alter table user_info auto_increment=10000;
 /**/
