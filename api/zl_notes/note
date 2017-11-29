@@ -1,0 +1,11 @@
+一、
+#string到int
+int,err:=strconv.Atoi(string)
+#string到int64
+int64, err := strconv.ParseInt(string, 10, 64)
+#int到string
+string:=strconv.Itoa(int)
+#int64到string
+string:=strconv.FormatInt(int64,10)
+
+二、struct转json后键名首字母大小写的问题：结构体里的字段首字母必须大写，否则无法正常解析

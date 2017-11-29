@@ -6,16 +6,16 @@ import (
 )
 
 type User struct {
-	user_id       *int `form:"user_id" json:"user_id"`
-	user_realname *string `form:"user_realname" json:"user_realname"`
-	user_nickname *string `form:"user_nickname" json:"user_nickname"`
-	user_password *string `form:"user_password" json:"user_password"`
-	user_age      *int    `form:"user_age" json:"user_age"`
-	user_sex      *int    `form:"user_sex" json:"user_sex"`
-	user_adress   *string `form:"user_adress" json:"user_adress"`
-	user_phone    *string `form:"user_phone" json:"user_phone"`
-	user_qq       *int    `form:"user_qq" json:"user_qq"`
-	user_wechat   *string `form:"user_wechat" json:"user_wechat"`
+	UserId       *int `form:"user_id" json:"user_id"`
+	UserRealname *string `form:"user_realname" json:"user_realname"`
+	UserNickname *string `form:"user_nickname" json:"user_nickname"`
+	UserPassword *string `form:"user_password" json:"user_password"`
+	UserAge      *int    `form:"user_age" json:"user_age"`
+	UserSex      *int    `form:"user_sex" json:"user_sex"`
+	UserAdress   *string `form:"user_adress" json:"user_adress"`
+	UserPhone    *string `form:"user_phone" json:"user_phone"`
+	UserQQ       *int    `form:"user_qq" json:"user_qq"`
+	UserWeChat   *string `form:"user_wechat" json:"user_wechat"`
 }
 
 // 用户注册
@@ -46,37 +46,39 @@ func UserQueryByNickId(user_id int) User {
 		user_wechat
 		FROM user_info where user_id = ?`, user_id)
 	var u User
-	err := row.Scan(&u.user_id, &u.user_realname, &u.user_nickname,&u.user_adress, &u.user_phone, &u.user_wechat, &u.user_age, &u.user_sex, &u.user_qq)
+	err := row.Scan(&u.UserId, &u.UserRealname, &u.UserNickname,&u.UserAdress, &u.UserPhone, &u.UserWeChat, &u.UserAge, &u.UserSex, &u.UserQQ)
 	checkErr(err)
-	fmt.Println("UserQueryByNickId",*u.user_nickname)
+	fmt.Println("UserQueryByNickId",*u.UserNickname)
 	return u
 }
 
 // 查询所有用户
-//func UserListQuery() (users []User) {
-	//rows, err := (db.DB).Query(`SELECT * FROM user_info`)
-	//checkErr(err)
-	//var u User
-	//var arr []User
-	//for rows.Next() {
-	//	var user_id int
-	//	var user_nickname string
-	//	var user_age int
-	//	var user_sex int
-	//
-	//	rows.Columns()
-	//	err = rows.Scan(&user_id, &user_nickname, &user_age, &user_sex)
-	//	checkErr(err)
-	//	u = User{
-	//		user_id:       user_id,
-	//		user_nickname: user_nickname,
-	//		user_age:      user_age,
-	//		user_sex:      user_sex,
-	//	}
-	//	arr = append(arr, u)
-	//}
-	//return arr
-//}
+func UserListQuery() (users []User) {
+	rows, err := (db.DB).Query(`SELECT * FROM user_info`)
+	checkErr(err)
+	defer rows.Close()
+	var u User
+	var arr []User
+	for rows.Next() {
+		//var user_id *int
+		//var user_nickname *string
+		//var user_age *int
+		//var user_sex *int
+
+		rows.Columns()
+		//err = rows.Scan(&user_id, &user_nickname, &user_age, &user_sex)
+		err := rows.Scan(&u.UserId, &u.UserPassword,&u.UserRealname, &u.UserNickname,&u.UserAdress, &u.UserPhone, &u.UserWeChat, &u.UserAge, &u.UserSex, &u.UserQQ)
+		checkErr(err)
+		//u = User{
+		//	UserId:       user_id,
+		//	UserNickname: user_nickname,
+		//	UserAge:      user_age,
+		//	UserSex:      user_sex,
+		//}
+		arr = append(arr, u)
+	}
+	return arr
+}
 
 // 昵称修改
 func UpdateUserNickName() {

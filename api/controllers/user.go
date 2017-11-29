@@ -42,37 +42,22 @@ func CreateUserHandler(c *gin.Context) {
 	fmt.Println("CreateUserHandler", userInfo)
 	//userJson, err := json.Marshal(&userInfo)
 	//checkErr(err)
-	//c.JSON(http.StatusOK, gin.H{
-	//	"code": http.StatusOK,
-	//	"msg":  "注册成功",
-	//	"info": gin.H{
-	//		"user_info":userInfo,
-	//	},
-	//})
 	c.JSON(http.StatusOK, gin.H{
 		"code": http.StatusOK,
-		"msg":  "注册成功",
-		"info": gin.H{
-			"user_id":        "",
-			"user_realname":  "",
-			"user_nickname":  "",
-			"user_age":       "",
-			"user_sex":       "",
-			"user_adress":    "",
-			"user_phone":     "",
-			"user_qq":        "",
-			"user_wechat":    "",
+		"msg":  "用户注册成功！",
+		"data": gin.H{
+			"user_info": userInfo,
 		},
 	})
 }
 
 func UserListHandler(c *gin.Context) {
-	//users := user.UserListQuery()
-
-	//c.JSON(http.StatusOK, gin.H{
-	//	"status": http.StatusOK,
-	//	"users":  users,
-	//})
+	users := user.UserListQuery()
+	c.JSON(http.StatusOK, gin.H{
+		"status": http.StatusOK,
+		"data":   users,
+		"msg":    "ok",
+	})
 }
 func UserByNameHandler(c *gin.Context) {
 	// 获取传入的参数
