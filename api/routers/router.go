@@ -7,15 +7,31 @@ import (
     "fmt"
     "GinApi/api/controllers"
     "github.com/gin-gonic/gin"
+    "os"
+    "io"
 )
 
 
 func InitRouter() http.Handler {
-    // 获得路由实例
+
+    // // Creates a router without any middleware by default
     router := gin.New()
-    //添加中间件
+
+    // Global middleware
+    // Logger middleware will write the logs to gin.DefaultWriter even if you set with GIN_MODE=release.
+    // By default gin.DefaultWriter = os.Stdout
     router.Use(gin.Logger())
+    // Recovery middleware recovers from any panics and writes a 500 if there was one.
     router.Use(gin.Recovery())
+    // Disable Console Color, you don't need console color when writing the logs to file.
+    gin.DisableConsoleColor()
+    // Logging to a file.
+    f, _ := os.Create("gin.log")
+    gin.DefaultWriter = io.MultiWriter(f)
+
+    // Use the following code if you need to write the logs to file and console at the same time.
+    // gin.DefaultWriter = io.MultiWriter(f, os.Stdout)
+
     // TODO:注意':'必须要匹配,'*'选择匹配,即存在就匹配,否则可以不考虑
     v1 := router.Group("api/v1")
     {

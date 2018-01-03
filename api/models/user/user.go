@@ -60,21 +60,9 @@ func UserListQuery() (users []User) {
 	var u User
 	var arr []User
 	for rows.Next() {
-		//var user_id *int
-		//var user_nickname *string
-		//var user_age *int
-		//var user_sex *int
-
 		rows.Columns()
-		//err = rows.Scan(&user_id, &user_nickname, &user_age, &user_sex)
 		err := rows.Scan(&u.UserId, &u.UserPassword,&u.UserRealname, &u.UserNickname,&u.UserAdress, &u.UserPhone, &u.UserWeChat, &u.UserAge, &u.UserSex, &u.UserQQ)
 		checkErr(err)
-		//u = User{
-		//	UserId:       user_id,
-		//	UserNickname: user_nickname,
-		//	UserAge:      user_age,
-		//	UserSex:      user_sex,
-		//}
 		arr = append(arr, u)
 	}
 	return arr
